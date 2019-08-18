@@ -84,3 +84,5 @@ $('.cross').click(function()
 
 // display the button little later to the header text
 setTimeout(function(){ $(".toggleButton").delay(4000).fadeIn(1000)});
+
+setTimeout(function(){ $(".sfImg").delay(5000).fadeIn(1000)});

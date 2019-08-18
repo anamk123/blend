@@ -474,7 +474,7 @@ input, select, textarea {
 		}
 	}
 
-	#header {
+	.headerText {
 		-moz-animation: header 1s 1.25s forwards;
 		-webkit-animation: header 1s 1.25s forwards;
 		-ms-animation: header 1s 1.25s forwards;
@@ -1172,6 +1172,22 @@ input, select, textarea {
 			  color: black;
 			  height: 300px;
 			  z-index: 999;
+
+		  }
+
+		  .streetFighter {
+
+			-moz-animation: toggleButton 1s 2.25s forwards !important;
+			-webkit-animation: toggleButton 1s 2.25s forwards !important;
+			-ms-animation: toggleButton 1s 2.25s forwards !important;
+			animation: toggleButton 1s 2.25s forwards !important;
+		  }
+
+		  .sfImg {
+			-moz-animation: toggleButton 1s 1.25s forwards !important;
+			-webkit-animation: toggleButton 1s 1.25s forwards !important;
+			-ms-animation: toggleButton 1s 1.25s forwards !important;
+			animation: toggleButton 1s 1.25s forwards !important;
 
 		  }
 
