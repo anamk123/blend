@@ -8,6 +8,7 @@ let temperature = document.getElementById("temp");
 let humidity = document.getElementById("humidity-div");
 let toggleButton = document.getElementsByClassName("toggleButton");
 
+// adding event key listeners
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 
