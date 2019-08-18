@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-animation: toggleButton 1s 1.25s forwards;
 			-ms-animation: toggleButton 1s 1.25s forwards;
 			animation: toggleButton 1s 1.25s forwards;
-			  background-image: url(/assets/css/images/weather.gif);
+			  background-image: url(assets/css/images/weather.gif);
 			  background-repeat: no-repeat;
 			  background-position: center;
 			  margin-top: 10%;
