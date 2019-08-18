@@ -1,4 +1,4 @@
-// getting the API code (js and tutirial help for json)
+// getting the API code (js and tutirial help for json) using let this time isntead of var
 const appKey = "46f184c3e1706939cb694857a1cfc1f6";
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
@@ -11,22 +11,25 @@ let toggleButton = document.getElementsByClassName("toggleButton");
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 
-
+// using enterkey on search bar same as clicking search
 function enterPressed(event) {
   if (event.key === "Enter") {
     findWeatherDetails();
   }
 }
-
+// if value is equal to (search input is user text here)
 function findWeatherDetails() {
   if (searchInput.value === "") {
   
+    
   }else {
     let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
    httpRequestAsync(searchLink, theResponse);
   }
  }
 
+
+ // getting the array/json data to display the objects in the indivdual divs made
 function theResponse(response) {
   let jsonObject = JSON.parse(response);
   cityName.innerHTML = jsonObject.name;
@@ -35,7 +38,7 @@ function theResponse(response) {
   humidity.innerHTML = jsonObject.main.humidity + "%";
   
 }
-
+// this I think is the request call back when changed however I need to research more on this
 function httpRequestAsync(url, callback)
 {
   console.log("hello");
@@ -58,6 +61,7 @@ $('.containerTemp').click(function()
 
 })
 
+// hiding and showing the weather finder
 $('.toggleButton').click(function()
 
 {
@@ -67,6 +71,7 @@ $('.toggleButton').click(function()
     
 })
 
+// crossing out the weather out to bring back the button
 $('.cross').click(function()
 
 {
@@ -76,4 +81,5 @@ $('.cross').click(function()
     
 })
 
+// display the button little later to the header text
 setTimeout(function(){ $(".toggleButton").delay(4000).fadeIn(1000)});
