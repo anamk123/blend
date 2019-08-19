@@ -1194,8 +1194,8 @@ input, select, textarea {
 		  .toggleButton:hover {
 			  transform: scale(1.2) !important;
 			  box-shadow: red 3px;
-			  background-image: none;
-			  background-color: white;
+			  opacity: 0.8;
+			  /* background-color: white; */
 			  color:#7DF9FF	;
 		  }
 
