@@ -1233,8 +1233,10 @@ input, select, textarea {
 
 		  @media only screen and (max-width: 600px) {
 			  .toggleButton {
-				  margin-left: 20%;
-				  margin-top: 25%;
+				  margin-left: 15%;
+				  margin-top: 15%;
+				  height: 250px;
+
 			  }
 
 			  .cross {
@@ -1255,9 +1257,6 @@ input, select, textarea {
 				  margin-left: -15%;
 			  }
 
-			  .headerText {
-				  margin-left: -10%;
-			  }
 			  .sfImg {
 				float: left;
 				height: 80px;
